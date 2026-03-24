@@ -15,6 +15,10 @@
       src: url("fonts/FKGroteskNeue.woff2") format("woff2");
     }
 
+    @font-face {
+  font-family: "BjornSerif";
+  src: url("fonts/BjornSerifPro-Regular.5128ee31.woff") format("woff");
+}
     body {
       margin: 0;
       font-family: "FKGrotesk", Arial, sans-serif;
@@ -39,26 +43,30 @@
     }
     .accent {
   display: block;
-  width: 320px;
+  width: 80%;
+  max-width: 800px;
   height: auto;
-  margin: 25px auto 45px auto;
+  margin: 30px auto 50px auto;
 }
 
-    .subtitle {
+   .subtitle {
+  font-family: "BjornSerif", serif;
   font-size: 20px;
-  margin-bottom: 40px;
-  color: #222;
   line-height: 1.5;
+  color: #333;
+
   max-width: 320px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 40px auto;
+
+  letter-spacing: 0.3px;
 }
 
 .subtitle span {
   display: inline-block;
 }
+
 .subtitle span:nth-child(2) {
-  margin-left: 10px;
+  margin-left: 12px;
 }
     .buttons {
       display: flex;
