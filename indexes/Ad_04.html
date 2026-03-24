@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Oatly Ad 04</title>
 
   <style>
@@ -27,9 +27,9 @@
       background: #f4f0e8;
       border: 3px solid #000;
       position: relative;
+      padding: 80px 70px 100px 70px;
       box-sizing: border-box;
       overflow: hidden;
-      padding: 60px 70px 80px 70px;
     }
 
     .accent {
@@ -42,43 +42,34 @@
     }
 
     .graffiti {
-      margin-top: 35px;
+      margin-top: 50px;
       font-family: "GirdoBlack", Arial, sans-serif;
-      font-size: 112px;
-      line-height: 0.88;
+      font-size: 92px;
+      line-height: 0.95;
       text-transform: uppercase;
       color: #000;
-      max-width: 760px;
       transform: rotate(-1.5deg);
       letter-spacing: 0.5px;
+      max-width: 1050px;
     }
 
     .line {
       display: block;
-      margin-bottom: 6px;
-      position: relative;
+      margin-bottom: 18px;
     }
 
-    .scribble {
+    .line:nth-child(2) {
+      margin-left: 40px;
+    }
+
+    .oatly-tag {
       position: absolute;
       right: 70px;
-      bottom: 110px;
-      font-family: Arial, sans-serif;
-      font-size: 22px;
-      color: #000;
-      transform: rotate(-8deg);
-      opacity: 0.75;
-    }
-
-    .scribble::before {
-      content: "";
-      position: absolute;
-      left: -12px;
-      right: -12px;
-      top: 50%;
-      height: 2px;
-      background: #000;
-      transform: rotate(-8deg);
+      bottom: 55px;
+      width: 150px;
+      height: auto;
+      transform: rotate(-6deg);
+      opacity: 0.95;
     }
 
     .back-button {
@@ -92,6 +83,7 @@
       border: 2px solid black;
       padding: 8px 16px;
       background: #efece6;
+      transition: 0.2s;
     }
 
     .back-button:hover {
@@ -101,35 +93,37 @@
 
     @media (max-width: 950px) {
       .wall {
-        padding: 50px 35px 80px 35px;
+        padding: 60px 35px 100px 35px;
       }
 
       .graffiti {
-        font-size: 70px;
+        font-size: 52px;
         max-width: 100%;
       }
 
-      .scribble {
+      .line:nth-child(2) {
+        margin-left: 15px;
+      }
+
+      .oatly-tag {
         right: 35px;
-        bottom: 95px;
-        font-size: 16px;
+        bottom: 45px;
+        width: 110px;
       }
     }
   </style>
 </head>
+
 <body>
   <div class="wall">
     <div class="accent"></div>
 
     <div class="graffiti">
-      <span class="line">THIS ONLY</span>
-      <span class="line">MAKES SENSE</span>
-      <span class="line">UNTIL YOU</span>
-      <span class="line">THINK</span>
-      <span class="line">ABOUT IT.</span>
+      <span class="line">THIS ONLY MAKES SENSE</span>
+      <span class="line">UNTIL YOU THINK ABOUT IT.</span>
     </div>
 
-    <div class="scribble">kind of weird, no?</div>
+    <img src="../png/Oatly_logo.png" alt="Oatly logo" class="oatly-tag">
   </div>
 
   <a href="../index.html" class="back-button">BACK</a>
