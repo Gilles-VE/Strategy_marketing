@@ -5,9 +5,19 @@
   <title>Oatly Campaign</title>
 
   <style>
+    @font-face {
+      font-family: "GirdoBlack";
+      src: url("fonts/GirdoBlackPro-Regular.a40bd0fc.woff") format("woff");
+    }
+
+    @font-face {
+      font-family: "FKGrotesk";
+      src: url("fonts/FKGroteskNeue.woff2") format("woff2");
+    }
+
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: "FKGrotesk", Arial, sans-serif;
       background: #EFECE6;
       display: flex;
       justify-content: center;
@@ -17,49 +27,74 @@
 
     .container {
       text-align: center;
+      max-width: 500px;
+      padding: 40px;
     }
 
     h1 {
+      font-family: "GirdoBlack", Arial, sans-serif;
+      font-size: 48px;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+
+    .subtitle {
+      font-size: 18px;
       margin-bottom: 40px;
-      font-size: 32px;
+      color: #333;
     }
 
     .buttons {
       display: flex;
       flex-direction: column;
-      gap: 15px;
+      gap: 18px;
     }
 
     a {
       text-decoration: none;
     }
 
-    button {
-      width: 200px;
-      padding: 15px;
-      font-size: 16px;
+    .btn {
+      padding: 16px;
+      font-size: 18px;
       border: 2px solid black;
-      background: white;
+      background: transparent;
+      font-family: "GirdoBlack", Arial, sans-serif;
       cursor: pointer;
       transition: 0.2s;
+      letter-spacing: 1px;
     }
 
-    button:hover {
+    .btn:hover {
       background: black;
-      color: white;
+      color: #EFECE6;
+      transform: translateY(-2px);
+    }
+
+    /* subtle Oatly accent line */
+    .accent {
+      width: 120px;
+      height: 6px;
+      background: #7FB5D6;
+      margin: 20px auto 40px auto;
     }
   </style>
 </head>
 <body>
 
   <div class="container">
-    <h1>Oatly Campaign Concepts</h1>
+    <h1>OATLY CAMPAIGN</h1>
+    <div class="accent"></div>
+
+    <div class="subtitle">
+      A series of provocative concepts exploring how we think about milk.
+    </div>
 
     <div class="buttons">
-      <a href="indexes/Ad_01.html"><button>Poster 1</button></a>
-      <a href="indexes/Ad_02.html"><button>Poster 2</button></a>
-      <a href="indexes/Ad_03.html"><button>TV commercial</button></a>
-      <a href="indexes/Ad_04.html"><button>Graffiti ad</button></a>
+      <a href="indexes/Ad_01.html"><div class="btn">POSTER 01</div></a>
+      <a href="indexes/Ad_02.html"><div class="btn">POSTER 02</div></a>
+      <a href="indexes/Ad_03.html"><div class="btn">VIDEO AD</div></a>
+      <a href="indexes/Ad_04.html"><div class="btn">GRAFFITI</div></a>
     </div>
   </div>
 
