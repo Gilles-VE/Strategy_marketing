@@ -16,9 +16,10 @@
     }
 
     @font-face {
-  font-family: "BjornSerif";
-  src: url("fonts/BjornSerifPro-Regular.5128ee31.woff") format("woff");
-}
+      font-family: "BjornSerif";
+      src: url("fonts/BjornSerifPro-Regular.5128ee31.woff") format("woff");
+    }
+
     body {
       margin: 0;
       font-family: "FKGrotesk", Arial, sans-serif;
@@ -41,47 +42,52 @@
       margin-bottom: 10px;
       letter-spacing: 1px;
     }
+
     .accent {
-  display: block;
-  width: 90%;
-  max-width: 700px;
-  height: auto;
-  margin: 35px auto 55px auto;
+      display: block;
+      width: 90%;
+      max-width: 700px;
+      height: auto;
+      margin: 35px auto 55px auto;
+      transform: scaleY(1.6);
+      transform-origin: center;
+    }
 
-  transform: scaleY(1.6);
-transform-origin: center;
-}
+    .subtitle {
+      font-family: "BjornSerif", serif;
+      font-size: 20px;
+      line-height: 1.5;
+      color: #333;
+      max-width: 320px;
+      margin: 0 auto 40px auto;
+      letter-spacing: 0.3px;
+    }
 
-   .subtitle {
-  font-family: "BjornSerif", serif;
-  font-size: 20px;
-  line-height: 1.5;
-  color: #333;
+    .subtitle span {
+      display: inline-block;
+    }
 
-  max-width: 320px;
-  margin: 0 auto 40px auto;
+    .subtitle span:nth-child(2) {
+      margin-left: 12px;
+    }
 
-  letter-spacing: 0.3px;
-}
-
-.subtitle span {
-  display: inline-block;
-}
-
-.subtitle span:nth-child(2) {
-  margin-left: 12px;
-}
     .buttons {
       display: flex;
       flex-direction: column;
+      align-items: center; /* 🔥 THIS centers buttons */
       gap: 18px;
     }
 
     a {
       text-decoration: none;
+      width: 100%;
+      display: flex;
+      justify-content: center; /* 🔥 keeps button centered inside link */
     }
 
     .btn {
+      width: 80%;              /* 🔥 controls width */
+      max-width: 400px;        /* 🔥 prevents being too wide */
       padding: 16px;
       font-size: 18px;
       border: 2px solid black;
@@ -90,6 +96,7 @@ transform-origin: center;
       cursor: pointer;
       transition: 0.2s;
       letter-spacing: 1px;
+      text-align: center;
     }
 
     .btn:hover {
@@ -99,21 +106,23 @@ transform-origin: center;
     }
   </style>
 </head>
+
 <body>
 
   <div class="container">
     <h1>OATLY CAMPAIGN</h1>
+
     <img src="png/Pink_line.png" alt="" class="accent">
 
     <div class="subtitle">
-  <span>We didn’t try to be liked.</span><br>
-  <span>We tried to make you think.</span>
-</div>
+      <span>We didn’t try to be liked.</span><br>
+      <span>We tried to make you think.</span>
+    </div>
 
     <div class="buttons">
       <a href="indexes/Ad_01.html"><div class="btn">POSTER</div></a>
-      <a href="indexes/Ad_02.html"><div class="btn">Video AD Part1</div></a>
-      <a href="indexes/Ad_03.html"><div class="btn">VIDEO AD Part2</div></a>
+      <a href="indexes/Ad_02.html"><div class="btn">VIDEO AD PART 1</div></a>
+      <a href="indexes/Ad_03.html"><div class="btn">VIDEO AD PART 2</div></a>
       <a href="indexes/Ad_04.html"><div class="btn">GRAFFITI</div></a>
     </div>
   </div>
