@@ -53,6 +53,7 @@ body {
   border: 3px solid #000;
   background: #efece6;
   box-shadow: 16px 16px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 /* ========================= */
@@ -259,7 +260,7 @@ body.Video-Ad .tractor {
   }
 
   body.Video-Ad .tractor {
-    left: -10%;
+    left: 0;
     width: 120%;
   }
 }
