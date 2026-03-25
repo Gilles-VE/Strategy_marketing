@@ -239,7 +239,7 @@ body.Ad-04 {
   background-size: 700px auto;
   background-position: center;
   background-repeat: repeat;
-}kground-repeat: no-repeat;
+}
 }
 body.Ad-04::before {
   content: "";
@@ -266,7 +266,7 @@ body.Ad-04 .poster::before {
   pointer-events: none;
 }
 
-body.Ad-04 .poster > * {
+body.Ad-04 .poster > *:not(.oatly-tag) {
   position: relative;
   z-index: 1;
 }
