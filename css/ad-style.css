@@ -234,7 +234,19 @@ body.Video-Ad .tractor {
 /* ========================= */
 /* AD 04 */
 /* ========================= */
-
+body.Ad-04 {
+  background-image: url("../assets/images/brick_wall.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body.Ad-04::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.65);
+  pointer-events: none;
+}
 body.Ad-04 .poster {
   display: block;
   min-height: 700px;
