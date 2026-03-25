@@ -334,12 +334,13 @@ body.Ad-04 .poster > *:not(.oatly-tag) {
 }
 
 .tag-main {
-  top: 155px;
-  left: 350px;
+  top: 160px;
+  left: 280px;
   font-family: "UrbanHeroes", Arial, sans-serif;
-  font-size: clamp(100px, 10vw, 180px);
-  line-height: 0.9;
-  transform: rotate(-10deg);
+  font-size: clamp(90px, 9vw, 150px);
+  line-height: 1;
+  transform: rotate(-8deg);
+  white-space: nowrap;
 }
 
 .tag-small {
