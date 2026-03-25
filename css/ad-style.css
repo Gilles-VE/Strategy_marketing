@@ -240,7 +240,6 @@ body.Ad-04 {
   background-position: center;
   background-repeat: repeat;
 }
-}
 body.Ad-04::before {
   content: "";
   position: fixed;
@@ -334,12 +333,12 @@ body.Ad-04 .poster > *:not(.oatly-tag) {
 }
 
 .tag-main {
-  top: 160px;
-  left: 280px;
+  top: 150px;
+  left: 240px;
   font-family: "UrbanHeroes", Arial, sans-serif;
   font-size: clamp(90px, 9vw, 150px);
   line-height: 1;
-  transform: rotate(-8deg);
+  transform: rotate(-12deg);
   white-space: nowrap;
 }
 
