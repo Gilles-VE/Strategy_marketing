@@ -19,8 +19,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #efece6;
   font-family: "FKGrotesk", Arial, sans-serif;
+
+  background-color: #efece6;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03)),
+    url("../assets/images/browser-desktop-grid.4b0c2fee.svg");
+  background-repeat: repeat;
+  background-size: 400px;
 }
 
 .poster {
@@ -29,6 +35,7 @@ body {
   border: 3px solid #000;
   box-sizing: border-box;
   position: relative;
+  background: #efece6;
 }
 
 .accent {
@@ -86,7 +93,6 @@ body {
 
 .poster {
   min-height: auto;
-  background: #efece6;
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
 }
@@ -137,7 +143,7 @@ body {
 }
 
 /* ========================= */
-/* Video AD SPECIFIC STYLES */
+/* VIDEO AD SPECIFIC STYLES */
 /* ========================= */
 
 body.Video-Ad .poster {
@@ -149,6 +155,7 @@ body.Video-Ad .poster {
   padding: 90px 80px 180px 80px;
   display: block;
 }
+
 body.Video-Ad.Video-Part-1 .poster {
   background: url("../assets/images/Pink_background.png");
   background-repeat: repeat;
@@ -240,8 +247,8 @@ body.Video-Ad .tractor {
     min-height: auto;
   }
 
-body.Video-Ad .tractor {
-  width: 120%;
-  left: -10%;
-}
+  body.Video-Ad .tractor {
+    width: 120%;
+    left: -10%;
+  }
 }
