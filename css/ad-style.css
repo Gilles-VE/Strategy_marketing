@@ -202,6 +202,16 @@ body.Video-Ad .tractor {
   pointer-events: none;
   z-index: 1;
 }
+body.Video-Ad .bottle {
+  position: absolute;
+  bottom: 0;
+  right: 60px;
+  width: 28%;
+  max-width: 260px;
+  height: auto;
+  display: block;
+  z-index: 1;
+}
 
 /* ========================= */
 /* MOBILE */
@@ -238,4 +248,9 @@ body.Video-Ad .tractor {
   body.Video-Ad .accent {
     height: 12px;
   }
+  body.Video-Ad .bottle {
+  right: 20px;
+  width: 38%;
+  max-width: 180px;
+}
 }
