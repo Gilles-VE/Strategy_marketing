@@ -17,6 +17,11 @@
   src: url("../assets/fonts/MargoPro-Regular.adcdb6c7.woff") format("woff");
 }
 
+@font-face {
+  font-family: "UrbanHeroes";
+  src: url("../fonts/Urban Heroes.ttf") format("truetype");
+}
+
 /* ========================= */
 /* PAGE */
 /* ========================= */
@@ -165,7 +170,6 @@ body.Video-Ad .poster {
   background: url("../assets/images/Blue_background.jpg");
   background-repeat: repeat;
   background-size: auto;
-
   box-shadow: 12px 12px 0px rgba(0, 0, 0, 0.08);
 }
 
@@ -228,6 +232,133 @@ body.Video-Ad .tractor {
 }
 
 /* ========================= */
+/* AD 04 */
+/* ========================= */
+
+body.Ad-04 .poster {
+  display: block;
+  min-height: 700px;
+  padding: 90px 70px 110px 70px;
+  background: #f4f0e8;
+}
+
+body.Ad-04 .poster::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 18% 24%, rgba(0, 0, 0, 0.025) 0 2px, transparent 2px),
+    radial-gradient(circle at 72% 62%, rgba(0, 0, 0, 0.02) 0 2px, transparent 2px);
+  background-size: 240px 240px, 300px 300px;
+  pointer-events: none;
+}
+
+body.Ad-04 .poster > * {
+  position: relative;
+  z-index: 1;
+}
+
+body.Ad-04 .accent {
+  height: 18px;
+}
+
+.ad4-wrap {
+  position: relative;
+  max-width: 980px;
+  margin-top: 40px;
+}
+
+.ad4-main {
+  position: relative;
+  max-width: 900px;
+  color: #000;
+  font-family: "GirdoBlack", Arial, sans-serif;
+  font-size: clamp(74px, 9vw, 118px);
+  line-height: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.ad4-main .line {
+  display: block;
+}
+
+.ad4-main .crossed {
+  position: relative;
+  display: inline-block;
+  margin-top: 6px;
+}
+
+.ad4-main .crossed::before,
+.ad4-main .crossed::after {
+  content: "";
+  position: absolute;
+  left: -3%;
+  width: 106%;
+  height: 8px;
+  background: #000;
+  transform-origin: center;
+}
+
+.ad4-main .crossed::before {
+  top: 46%;
+  transform: rotate(-6deg);
+}
+
+.ad4-main .crossed::after {
+  top: 56%;
+  transform: rotate(3deg);
+}
+
+.ad4-graffiti {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.tag {
+  position: absolute;
+  display: block;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.tag-main {
+  top: 155px;
+  left: 350px;
+  font-family: "UrbanHeroes", Arial, sans-serif;
+  font-size: clamp(58px, 6vw, 92px);
+  line-height: 0.9;
+  transform: rotate(-7deg);
+}
+
+.tag-small {
+  top: 255px;
+  left: 785px;
+  font-family: "UrbanHeroes", Arial, sans-serif;
+  font-size: clamp(34px, 3vw, 54px);
+  transform: rotate(9deg);
+}
+
+.tag-question {
+  top: 40px;
+  right: 30px;
+  font-family: "UrbanHeroes", Arial, sans-serif;
+  font-size: clamp(34px, 3vw, 56px);
+  transform: rotate(11deg);
+}
+
+.oatly-tag {
+  position: absolute;
+  right: 55px;
+  bottom: 45px;
+  width: 150px;
+  height: auto;
+  opacity: 0.95;
+  transform: rotate(-8deg);
+}
+
+/* ========================= */
 /* MOBILE */
 /* ========================= */
 
@@ -262,5 +393,48 @@ body.Video-Ad .tractor {
   body.Video-Ad .tractor {
     left: -20px;
     width: 120%;
+  }
+
+  body.Ad-04 .poster {
+    min-height: 560px;
+    padding: 70px 35px 95px 35px;
+  }
+
+  .ad4-wrap {
+    margin-top: 30px;
+  }
+
+  .ad4-main {
+    font-size: clamp(56px, 14vw, 84px);
+    max-width: 100%;
+  }
+
+  .ad4-main .crossed::before,
+  .ad4-main .crossed::after {
+    height: 6px;
+  }
+
+  .tag-main {
+    top: 120px;
+    left: 150px;
+    font-size: clamp(42px, 11vw, 64px);
+  }
+
+  .tag-small {
+    top: 200px;
+    left: 250px;
+    font-size: clamp(28px, 8vw, 42px);
+  }
+
+  .tag-question {
+    top: 20px;
+    right: 10px;
+    font-size: clamp(24px, 7vw, 38px);
+  }
+
+  .oatly-tag {
+    right: 18px;
+    bottom: 18px;
+    width: 90px;
   }
 }
