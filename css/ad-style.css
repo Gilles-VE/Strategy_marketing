@@ -238,7 +238,7 @@ body.Video-Ad .tractor {
 body.Ad-04 .poster {
   display: block;
   min-height: 700px;
-  padding: 90px 70px 110px 70px;
+  padding: 120px 90px 140px 90px;
   background: #f4f0e8;
 }
 
@@ -258,10 +258,6 @@ body.Ad-04 .poster > * {
   z-index: 1;
 }
 
-body.Ad-04 .accent {
-  height: 18px;
-}
-
 .ad4-wrap {
   position: relative;
   max-width: 980px;
@@ -271,12 +267,12 @@ body.Ad-04 .accent {
 .ad4-main {
   position: relative;
   max-width: 900px;
-  color: #000;
   font-family: "GirdoBlack", Arial, sans-serif;
-  font-size: clamp(74px, 9vw, 118px);
+  font-size: clamp(90px, 10vw, 130px);
   line-height: 0.9;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  color: #000;
 }
 
 .ad4-main .line {
@@ -295,7 +291,7 @@ body.Ad-04 .accent {
   position: absolute;
   left: -3%;
   width: 106%;
-  height: 8px;
+  height: 10px;
   background: #000;
   transform-origin: center;
 }
@@ -319,39 +315,40 @@ body.Ad-04 .accent {
 .tag {
   position: absolute;
   display: block;
-  color: #000;
   text-transform: uppercase;
+  font-family: "UrbanHeroes", Arial, sans-serif;
+  color: #d84c7f;
 }
 
 .tag-main {
   top: 155px;
   left: 350px;
   font-family: "UrbanHeroes", Arial, sans-serif;
-  font-size: clamp(58px, 6vw, 92px);
+  font-size: clamp(70px, 7vw, 110px);
   line-height: 0.9;
-  transform: rotate(-7deg);
+  transform: rotate(-10deg);
 }
 
 .tag-small {
   top: 255px;
   left: 785px;
   font-family: "UrbanHeroes", Arial, sans-serif;
-  font-size: clamp(34px, 3vw, 54px);
-  transform: rotate(9deg);
+  font-size: clamp(40px, 4vw, 60px);
+  transform: rotate(12deg);
 }
 
 .tag-question {
   top: 40px;
   right: 30px;
   font-family: "UrbanHeroes", Arial, sans-serif;
-  font-size: clamp(34px, 3vw, 56px);
-  transform: rotate(11deg);
+  font-size: clamp(40px, 4vw, 60px);
+  transform: rotate(14deg);
 }
 
 .oatly-tag {
   position: absolute;
   right: 55px;
-  bottom: 45px;
+  bottom: 25px;
   width: 150px;
   height: auto;
   opacity: 0.95;
