@@ -53,6 +53,7 @@ body {
   position: fixed;
   bottom: 20px;
   left: 25px;
+  z-index: 10;
   font-family: "GirdoBlack", Arial, sans-serif;
   font-size: 22px;
   text-decoration: none;
@@ -199,6 +200,7 @@ body.ad-03 .tractor {
   height: auto;
   display: block;
   pointer-events: none;
+  z-index: 1;
 }
 
 /* ========================= */
