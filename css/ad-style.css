@@ -1,3 +1,7 @@
+/* ========================= */
+/* FONTS */
+/* ========================= */
+
 @font-face {
   font-family: "GirdoBlack";
   src: url("../assets/fonts/GirdoBlackPro-Regular.a40bd0fc.woff") format("woff");
@@ -13,6 +17,10 @@
   src: url("../assets/fonts/MargoPro-Regular.adcdb6c7.woff") format("woff");
 }
 
+/* ========================= */
+/* PAGE */
+/* ========================= */
+
 body {
   margin: 0;
   min-height: 100vh;
@@ -20,110 +28,86 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "FKGrotesk", Arial, sans-serif;
-
   background-color: #efece6;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03)),
     url("../assets/images/browser-desktop-grid.4b0c2fee.svg");
   background-repeat: repeat;
+  background-size: 120px;
+  padding: 40px;
+  box-sizing: border-box;
 }
+
+/* ========================= */
+/* POSTER BASE */
+/* ========================= */
 
 .poster {
   width: 1200px;
   max-width: 95vw;
-  border: 3px solid #000;
-  box-sizing: border-box;
+  min-height: auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
   position: relative;
+  box-sizing: border-box;
+  border: 3px solid #000;
   background: #efece6;
 }
+
+/* ========================= */
+/* GENERIC ELEMENTS */
+/* ========================= */
 
 .accent {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
+  height: 12px;
   background: #7fb5d6;
 }
 
 .headline {
+  margin: 20px 0 30px 0;
   font-family: "GirdoBlack", "FKGrotesk", Arial, sans-serif;
+  font-size: clamp(48px, 9vw, 110px);
   line-height: 0.9;
   text-transform: uppercase;
 }
 
 .subtext {
+  max-width: 520px;
+  margin: 0 0 20px 0;
   font-family: "Margo", "FKGrotesk", Arial, sans-serif;
+  font-size: clamp(18px, 3.5vw, 36px);
+  line-height: 1.25;
+  letter-spacing: 0.5px;
 }
 
-.back-button {
-  position: fixed;
-  bottom: 20px;
-  left: 25px;
-  z-index: 10;
-  font-family: "GirdoBlack", Arial, sans-serif;
-  font-size: 22px;
-  text-decoration: none;
-  color: black;
-  border: 2px solid black;
-  padding: 8px 16px;
-  background: #efece6;
-  cursor: pointer;
-  transition: 0.2s ease;
-}
-
-.back-button:hover {
-  background: black;
-  color: #efece6;
-  transform: translateY(-2px);
+.underline {
+  width: 150px;
+  height: 7px;
+  margin: 0 0 28px 0;
+  background: #7fb5d6;
 }
 
 .logo {
   position: absolute;
-  bottom: 25px;
   right: 30px;
+  bottom: 25px;
   width: 140px;
   height: auto;
   opacity: 0.95;
 }
 
 /* ========================= */
-/* DEFAULT AD LAYOUT (AD 01) */
+/* LAYOUT */
 /* ========================= */
 
-.poster {
-  min-height: auto;
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-}
-
-.accent {
-  height: 12px;
-}
-
 .left {
-  padding: 40px 25px 25px 25px;
   display: flex;
   flex-direction: column;
-}
-
-.headline {
-  font-size: clamp(48px, 9vw, 110px);
-  margin: 20px 0 30px 0;
-}
-
-.underline {
-  width: 150px;
-  height: 7px;
-  background: #7fb5d6;
-  margin: 0 0 28px 0;
-}
-
-.subtext {
-  font-size: clamp(18px, 3.5vw, 36px);
-  line-height: 1.25;
-  max-width: 520px;
-  margin: 0 0 20px 0;
-  letter-spacing: 0.5px;
+  padding: 40px 25px 25px 25px;
 }
 
 .right {
@@ -134,25 +118,51 @@ body {
 }
 
 .right img:not(.logo) {
+  display: block;
   width: 100%;
   max-width: 320px;
   height: auto;
   object-fit: contain;
-  display: block;
 }
 
 /* ========================= */
-/* VIDEO AD SPECIFIC STYLES */
+/* BACK BUTTON */
+/* ========================= */
+
+.back-button {
+  position: fixed;
+  left: 25px;
+  bottom: 20px;
+  z-index: 10;
+  padding: 8px 16px;
+  border: 2px solid black;
+  background: #efece6;
+  color: black;
+  font-family: "GirdoBlack", Arial, sans-serif;
+  font-size: 22px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.back-button:hover {
+  background: black;
+  color: #efece6;
+  transform: translateY(-2px);
+}
+
+/* ========================= */
+/* VIDEO AD */
 /* ========================= */
 
 body.Video-Ad .poster {
+  display: block;
   min-height: auto;
+  padding: 90px 80px 180px 80px;
+  position: relative;
   background: url("../assets/images/Blue_background.jpg");
   background-repeat: repeat;
   background-size: auto;
-  position: relative;
-  padding: 90px 80px 180px 80px;
-  display: block;
 }
 
 body.Video-Ad.Video-Part-1 .poster {
@@ -179,39 +189,38 @@ body.Video-Ad .accent {
 }
 
 body.Video-Ad .headline {
+  margin: 40px 0;
   font-size: clamp(50px, 10vw, 120px);
-  margin: 40px 0 40px 0;
   text-align: center;
   color: #000;
 }
 
 body.Video-Ad .underline {
-  width: 170px;
-  height: 7px;
-  background: #000;
-  margin: 30px auto;
   display: block;
+  width: 170px;
+  margin: 30px auto;
+  background: #000;
 }
 
 body.Video-Ad .subtext {
+  max-width: 620px;
+  margin: 0 auto;
   font-size: clamp(20px, 4vw, 40px);
   line-height: 1.15;
   text-align: center;
-  margin: 0 auto;
-  max-width: 620px;
   letter-spacing: 0.3px;
   color: #111;
 }
 
 body.Video-Ad .tractor {
   position: absolute;
-  bottom: 0;
   left: 0;
+  bottom: 0;
+  z-index: 1;
+  display: block;
   width: 100%;
   height: auto;
-  display: block;
   pointer-events: none;
-  z-index: 1;
 }
 
 /* ========================= */
@@ -236,18 +245,18 @@ body.Video-Ad .tractor {
   }
 
   .logo {
-    width: 50px;
-    bottom: 15px;
     right: 15px;
+    bottom: 15px;
+    width: 50px;
   }
 
   body.Video-Ad .poster {
-    padding: 80px 40px 90px 40px;
     min-height: auto;
+    padding: 80px 40px 90px 40px;
   }
 
   body.Video-Ad .tractor {
-    width: 120%;
     left: -10%;
+    width: 120%;
   }
 }
