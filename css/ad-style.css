@@ -360,12 +360,14 @@ body.Ad-04 .poster > * {
 
 .oatly-tag {
   position: absolute;
-  right: 50px;
-  bottom: -80px;
+  right: 35px;
+  bottom: 25px;
   width: 150px;
   height: auto;
   opacity: 0.95;
-  transform: rotate(-8deg);
+  transform: rotate(-6deg);
+
+  filter: drop-shadow(2px 4px 3px rgba(0,0,0,0.15));
 }
 
 /* ========================= */
